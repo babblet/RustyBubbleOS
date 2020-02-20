@@ -1,9 +1,15 @@
 [package]
-name = "BubbleOS"
+name = "bubble_os"
 version = "0.1.0"
 authors = ["babblet <frk.haha@hotmail.se>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[profile.dev]
+panic = "abort"
 
+[profile.release]
+panic = "abort"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
+
